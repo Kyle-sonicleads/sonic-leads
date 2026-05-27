@@ -5,5 +5,5 @@
 
   [build.environment]
     PORT = "3000"
-    NODE_VERSION = "18"
+    NODE_VERSION = "20"
   
