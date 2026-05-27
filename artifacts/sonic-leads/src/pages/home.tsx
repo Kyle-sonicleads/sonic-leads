@@ -51,9 +51,9 @@ function PersonaNarrative({
 
   const annualLine = (
     <p>
-      Over a year — assuming they stay consistent — that's{" "}
+      Over a year — assuming he stays consistent — that's{" "}
       <strong className="text-white">{fmt(annualRev)} in additional turnover</strong>{" "}
-      from leads that cost a fraction of what they make back.
+      from leads that cost a fraction of what he makes back.
     </p>
   );
 
@@ -80,25 +80,25 @@ function PersonaNarrative({
 
   const perTradeBody: Record<Exclude<TradeKey, "other">, React.ReactNode> = {
     plumber: (
-      <>Dave owns a plumbing company and gets <strong className="text-white">{leads} {leadWord}</strong> from Sonic Leads every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in work they wouldn't have had without Sonic Leads.</>
+      <>Dave owns a plumbing company and gets <strong className="text-white">{leads} {leadWord}</strong> from Sonic Leads every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in work he wouldn't have had without Sonic Leads.</>
     ),
     electrician: (
-      <>Terry owns an electrical company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> flowing straight into the business.</>
+      <>Terry owns an electrical company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> flowing straight into the business.</>
     ),
     roofer: (
-      <>Kev owns a roofing company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in additional work they can keep the lads busy with.</>
+      <>Kev owns a roofing company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in additional work to keep the lads busy.</>
     ),
     builder: (
-      <>Mick owns a building company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> he wouldn't have had otherwise.</>
+      <>Mick owns a building company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> he wouldn't have had otherwise.</>
     ),
     plasterer: (
-      <>Lee owns a plastering company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> of consistent work keeping the diary full.</>
+      <>Lee owns a plastering company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> of consistent work keeping the diary full.</>
     ),
     waste: (
-      <>Scott owns a waste removal company and gets <strong className="text-white">{leads} exclusive local leads</strong> from Sonic Leads every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong> — people with waste to shift aren't shopping around, they just want it gone. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong>.</>
+      <>Scott owns a waste removal company and gets <strong className="text-white">{leads} exclusive local leads</strong> from Sonic Leads every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong> — people with waste to shift aren't shopping around, they just want it gone. At <strong className="text-white">{fmt(avgJobValue)} a job</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong>.</>
     ),
     kitchen: (
-      <>Craig owns a kitchen fitting company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. His team wins <strong className="text-white">{t.closeOutOf10} out of every 10 jobs they quote</strong>. At <strong className="text-white">{fmt(avgJobValue)} a kitchen fit</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in work they wouldn't have had otherwise.</>
+      <>Craig owns a kitchen fitting company and gets <strong className="text-white">{leads} {leadWord}</strong> every month. He wins roughly <strong className="text-white">{t.closeOutOf10} out of every 10 jobs he quotes</strong>. At <strong className="text-white">{fmt(avgJobValue)} a kitchen fit</strong>, that's an extra <strong style={{ color: "#00A8E8", fontSize: "1.1em" }}>{fmt(monthlyRev)}/month</strong> in work he wouldn't have had otherwise.</>
     ),
   };
 
@@ -665,7 +665,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.55)" }}>
-                Dave owns a plumbing company and takes 10 leads from us this month. On average his team wins around 7 out of 10 jobs they quote. At £350 a job, that's £2,450 of extra work in the diary.
+                Dave owns a plumbing company and takes 10 leads from us this month. He wins roughly 7 out of 10 jobs he quotes. At £350 a job, that's £2,450 of extra work in the diary.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-5">
                 <div className="rounded-lg p-4" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -697,7 +697,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.55)" }}>
-                Rob owns a roofing company and takes 10 leads — repairs, re-roofs, fascias and soffits. On average his team wins around 6 out of 10 jobs they quote. At £850 a job, that's £5,100 of extra work they wouldn't have had otherwise.
+                Rob owns a roofing company and takes 10 leads — repairs, re-roofs, fascias and soffits. He wins roughly 6 out of 10 jobs he quotes. At £850 a job, that's £5,100 of extra work he wouldn't have had otherwise.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-5">
                 <div className="rounded-lg p-4" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}>
