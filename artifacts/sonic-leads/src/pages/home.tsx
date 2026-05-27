@@ -770,9 +770,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {[
-              { quote: '"I was spending £180 a month on Checkatrade and winning maybe one job. First week with Sonic I had three jobs booked in. Genuinely not looked back."', name: "Dave T.", trade: "Roofer — Staffordshire" },
-              { quote: '"Straight talking, no messing about. They told me exactly what I\'d get and that\'s what I got. My diary\'s been solid for three months running."', name: "Lee M.", trade: "Solar Installer — West Yorkshire" },
-              { quote: '"Other lead sites send you the same lead as five other roofers. These lot send it to you and you alone. Makes all the difference when you\'re quoting."', name: "Karl B.", trade: "Roofer — Cheshire" },
+              { quote: '"I was spending £180 a month on Checkatrade and winning maybe one job. First week with Sonic I had three jobs booked in. Genuinely not looked back."', name: "Dave T.", trade: "Roofer — Sunderland" },
+              { quote: '"Straight talking, no messing about. They told me exactly what I\'d get and that\'s what I got. My diary\'s been solid for three months running."', name: "Lee M.", trade: "Plasterer — Leeds" },
+              { quote: '"Other lead sites send you the same lead as five other roofers. These lot send it to you and you alone. Makes all the difference when you\'re quoting."', name: "Karl B.", trade: "Roofer — Newcastle" },
             ].map((t, i) => (
               <div key={i} className="p-8 rounded-xl fade-up-element" style={{ background: "#111827", border: "1px solid rgba(255,255,255,0.07)" }} data-testid={`testimonial-${i + 1}`}>
                 <div className="text-lg tracking-widest mb-5" style={{ color: "#F59E0B" }}>★★★★★</div>
