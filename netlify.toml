@@ -1,12 +1,9 @@
 [build]
-  command = "npm install -g pnpm && pnpm install && pnpm --filter @workspace/sonic-leads run build"
-  publish = "artifacts/sonic-leads/dist/public"
+    base = "artifacts/sonic-leads"
+    command = "pnpm run build"
+    publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "20"
-  BASE_PATH = "/"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  [build.environment]
+    PORT = "3000"
+    NODE_VERSION = "18"
+  
