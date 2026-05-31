@@ -257,6 +257,19 @@ export default function SolarInstallers() {
             >
               Why Sonic
             </button>
+            <Link
+              href="/trades"
+              className="font-semibold px-5 py-2 rounded-md transition-all"
+              style={{
+                color: "rgba(255,255,255,0.85)",
+                border: "1px solid rgba(255,255,255,0.25)",
+                background: "transparent",
+              }}
+              onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
+              onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.background = "transparent")}
+            >
+              For Trades
+            </Link>
             <button
               onClick={() => scrollTo("solar-book")}
               className="text-white font-semibold px-5 py-2 rounded-md transition-all"
@@ -284,6 +297,9 @@ export default function SolarInstallers() {
               borderTop: "1px solid rgba(255,255,255,0.08)",
             }}
           >
+            <Link href="/trades" className="text-white/80 hover:text-white text-base font-medium">
+              For Trades
+            </Link>
             <button
               onClick={() => scrollTo("solar-how-it-works")}
               className="text-white/80 hover:text-white text-base font-medium"
