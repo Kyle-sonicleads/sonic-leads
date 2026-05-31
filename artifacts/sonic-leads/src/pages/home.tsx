@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Link } from "wouter";
 import { X, Menu, Zap, MapPin, Lock, CreditCard, PhoneCall, Check } from "lucide-react";
 
 // ─── Trade data ───────────────────────────────────────────────────────────────
@@ -511,6 +512,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
             <button onClick={() => scrollTo("how-it-works")} className="hover:text-white transition-colors">Our Process</button>
             <button onClick={() => scrollTo("calculator")} className="hover:text-white transition-colors">The Maths</button>
+            <Link href="/solar-installers" className="hover:text-white transition-colors" style={{ color: "rgba(255,255,255,0.8)" }}>For Installers</Link>
             <button
               onClick={() => scrollTo("book-call")}
               className="text-white font-semibold px-5 py-2 rounded-md transition-all"
@@ -530,6 +532,7 @@ export default function Home() {
             style={{ background: "rgba(10,15,30,0.98)", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
             <button onClick={() => scrollTo("how-it-works")} className="text-white/80 hover:text-white text-base font-medium">Our Process</button>
             <button onClick={() => scrollTo("calculator")} className="text-white/80 hover:text-white text-base font-medium">The Maths</button>
+            <Link href="/solar-installers" className="text-white/80 hover:text-white text-base font-medium">For Installers</Link>
             <button onClick={() => scrollTo("book-call")} className="text-white font-semibold px-8 py-3 rounded-md w-3/4 text-center" style={{ background: "#006DB7" }}>Book a call</button>
           </div>
         )}
